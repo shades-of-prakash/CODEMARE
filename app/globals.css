@@ -1,26 +1,95 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+.colors{
+  --color-melrose-50: #f4f3ff;
+--color-melrose-100: #ece8ff;
+--color-melrose-200: #dad5ff;
+--color-melrose-300: #c5baff;
+--color-melrose-400: #9f88fd;
+--color-melrose-500: #8158fa;
+--color-melrose-600: #7235f2;
+--color-melrose-700: #6323de;
+--color-melrose-800: #521dba;
+--color-melrose-900: #451a98;
+--color-melrose-950: #290e67;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark{
+  --primary-color:black;
+  --secondary-color:#FBFBFB;
+
+  --accent-color: #C5BAFF;
+
+  --background:#18181b;
+
+  /* buttons */
+  --button-default-background:#8158fa;
+  --button-hover-background:#7235f2;
+  --button-active-background:#6323de;
+  --button-disabled-background:#290e67;
+  --button-disabled-text:#6323de;
+  --button-text:#290e67;
+
+  /* icons */
+  --icon-stroke-color:#521dba;
+  --icon-fill-color:#9f88fd;
+
+  /* box-shadow */
+  --box-shadow-all:0 10px 20px -12px rgba(16,24,40,.1);
+
+   /* border */
+   --border:#27272a;
+
+   /* card */
+   --card-background-color:#18181b;
+}
+.light{
+  --primary-color:#FBFBFB;
+  --secondary-color:black;
+  --accent-color: #C5BAFF;
+
+  --background:#fff;
+  
+  /* buttons */
+  --button-default-background:#8158fa;
+  --button-hover-background:#7235f2;
+  --button-active-background:#6323de;
+  --button-disabled-background:#290e67;
+  --button-disabled-text:#6323de;
+  --button-text:#290e67;
+
+  /* icons */
+  --icon-stroke-color:#521dba;
+  --icon-fill-color:#9f88fd;
+
+  /* border */
+  --border:#d4d4d8;
+  /* card */
+  --card-background-color:#FBFBFB;
+
+  /* text-color */
+  --text-color:#1a1a1a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --color-primary:var(--primary-color);
+  --color-secondary:var(--secondary-color);
+  --color-accent:var(--accent-color);
+  --shadow-all:var(--box-shadow-all);
+  --color-border-color:var(--border);
+  --color-card-background:var(--card-background-color);
+  --color-txt-color:var(--text-color);
+
+  --color-test:var(--button-text);
+  --color-background:var(--background);
+
+  /* buttons */
+  --color-button-default-background:var(--button-default-background);
+  --color-button-hover-background:var(--button-hover-background);
+  --color-button-active-background:var(--button-active-background);
+  --color-button-disabled-background:var(--button-disabled-background);
+  --color-button-disabled-text:var(--button-disabled-text);
+  --color-button-text:var(--button-text);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
