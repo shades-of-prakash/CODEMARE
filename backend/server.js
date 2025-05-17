@@ -1,1 +1,1 @@
-console.log("Server coming soon...");
+console.log("server...");
