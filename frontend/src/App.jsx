@@ -14,7 +14,7 @@ function App() {
 						<Route
 							path="popular"
 							element={
-								<div className="bg-green-900">This is home in Main layout</div>
+								<div className="bg-green-900 custom-class">This is home in Main layout</div>
 							}
 						/>
 					</Route>
